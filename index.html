@@ -5,40 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter City Name"spellcheck="false">
-            <button><img src="img/search.png" alt=""></button>
-        </div>
-        <div class="error">
-            <p>Invalid City Name</p>
-        </div>
-        <div class="weather">
-            <img src="img/rain.png" alt="" class="weather-icon">
-            <h1 class="temp">22°C</h1>
-            <h2 class="city">New York</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="img/humidity.png" alt="">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Humidity</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <img src="img/wind.png" alt="">
-                    <div>
-                        <p class="wind">15 Km/h</p>
-                        <p>Wind Speed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
+     <script>
         const apiKey="3e77a78322a2e7423a442e5926b2f651";
         const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
         
@@ -92,5 +59,39 @@
         })
         
     </script>
-</body>
+
+
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name"spellcheck="false">
+            <button><img src="img/search.png" alt=""></button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        <div class="weather">
+            <img src="img/rain.png" alt="" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="img/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/wind.png" alt="">
+                    <div>
+                        <p class="wind">15 Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </body>
 </html>
